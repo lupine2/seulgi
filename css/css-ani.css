@@ -1,0 +1,33 @@
+/* css animation 19.07.19 */
+.fade-slide-down{
+    animation-name: fade-slide-down;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+
+    /* 애니메이션 종료 위치 */
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.ani-delay1s{
+    animation-delay: 1s;
+}
+.ani-delay1-5s{
+    animation-delay: 1.5s;
+}
+.ani-delay2s{
+    animation-delay: 2s;
+}
+.ani-delay2-5s{
+    animation-delay: 2.5s;
+}
+@keyframes fade-slide-down{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
